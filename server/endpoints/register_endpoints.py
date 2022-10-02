@@ -1,4 +1,4 @@
-from endpoints.ping import PING
+from endpoints.ping.ping import PING
 
 
 def register(app):
