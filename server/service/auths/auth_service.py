@@ -1,6 +1,5 @@
 import datetime
 import os
-
 from service.auths.AuthInterface import AuthenticateInterface
 from flask import jsonify
 from helper.response.rest_response import Response
