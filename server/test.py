@@ -1,3 +1,2 @@
-import datetime
-
-print(datetime.datetime.now().timestamp())
+from helper.encode.base64_utils import encode
+print(encode("password"))
