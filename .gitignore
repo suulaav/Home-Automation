@@ -9,8 +9,5 @@
 /test.sql
 /user.py
 /.idea
-respberry_pi/.idea
-server/.idea
-client/.idea
 __pycache__
 database.db
