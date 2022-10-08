@@ -1,3 +1,5 @@
+import json
+
 import requests
 
 token = str()
@@ -22,7 +24,9 @@ def get_data():
         if response.keys().__contains__('message') and response['message'] == 'Token is invalid!':
             token = login()['data']['token']
         if response.keys().__contains__('data'):
-            print(response['data'])
+            id = json.loads(response['data'])
+
+            print(id['id'])
 
 
 get_data()

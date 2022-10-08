@@ -1,7 +1,7 @@
 import sqlite3
 
 from flask import Blueprint, jsonify, make_response, request
-from service.auths.auth_service import Authenticate
+from service.auths.auth_service import AuthenticateService
 from helper.encode.base64_utils import encode
 from database.user import get_user_credentials
 
@@ -25,6 +25,6 @@ def auth():
 
     if db_credentials['user_name'] == request_credentials['userName'] and \
             db_credentials['password'] == encoded_password:
-        return Authenticate(app).authenticate(request_credentials)
+        return AuthenticateService(app).authenticate(request_credentials)
     else:
         return make_response(jsonify({"message": "Invalid userName or password"}), 401)

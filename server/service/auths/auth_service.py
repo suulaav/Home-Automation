@@ -6,7 +6,7 @@ from helper.response.rest_response import Response
 import jwt
 
 
-class Authenticate(AuthenticateInterface):
+class AuthenticateService(AuthenticateInterface):
     def __init__(self, app):
         self.app = app
 
