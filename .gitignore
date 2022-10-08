@@ -10,4 +10,4 @@
 /user.py
 /.idea
 __pycache__
-database.db
+/server/database.db
