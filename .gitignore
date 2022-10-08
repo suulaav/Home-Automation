@@ -8,6 +8,6 @@
 /test.json
 /test.sql
 /user.py
-/.idea
+.idea
 __pycache__
 /server/database.db
